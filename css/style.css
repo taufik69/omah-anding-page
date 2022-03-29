@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+
+/* ==================================================
+            Common css start
+======================================================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,li{
+    list-style: none;
+}
+
+ul,li,h1,h2,h3,h4,h5,h6,a,p{
+    margin: 0;
+    padding: 0;
+}
+
+/* ==================================================
+            Common css End
+======================================================*/
+
+/* ==================================================
+            Nav Part Start
+======================================================*/
+.custom-nav {
+    padding: 10px 0;
+    background: #EEEDDE;
+}
+.custom-nav .custom-menu ul li {
+        padding: 0 30px;  
+        position: relative;      
+}
+.custom-nav .custom-menu ul li a{
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color: #203239;
+    position: relative;
+    
+}
+
+.custom-menu ul li a::after{
+    position: absolute;
+    content: '';
+    bottom: 3px;
+    left: 20%;
+    width: 60%;
+    height: 4px;
+    background: #FF7527;
+    border-radius: 10px 10px 10px 10px;
+    transform: scale(0);
+    transition: all linear .2s;
+}
+
+.custom-menu ul li .dropdown{
+    position: absolute;
+    border: 1px solid #36333385;
+    top: 100%;
+    left: 26px;
+    transform: rotatex(90deg);
+    transform-origin: top;
+    transition: .3s;
+    /* padding: 10px 15px; */
+}
+.custom-menu ul li a i{
+    transition: all linear .3s;
+    transform: rotate(0deg);
+}
+
+.custom-menu ul li .dropdown ul li a::after{
+    display: none;
+ }
+
+.custom-menu ul li .dropdown ul li{
+    border-bottom: 1px solid #FF7527;
+    padding: 10px 15px;
+}
+.custom-menu ul li a:hover::after{
+    transform: scale(1);
+   
+}
+.custom-menu ul li a:hover{
+    font-weight: 500;
+}
+.custom-menu ul li:hover .dropdown{
+    transform: rotatex(0deg);
+    transform-origin: top;
+    
+}
+.custom-menu ul li:hover i{
+    transform: rotate(180deg);
+}
+
+
+/* ==================================================
+            Nav Part end
+======================================================*/
+/* ==================================================
+            Banner Part Start
+======================================================*/
+#bannner_part{
+    padding: 50px;
+    background: #EEEDDE;
+}
+#bannner_part .bannertext h1{
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: #203239;
+}
+#bannner_part .bannertext p{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    color: #203239;
+    margin-top: 36px;
+}
+#bannner_part .bannertext .box_search{
+    width: 70%;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-top: 30px;
+    background: #fff;
+    
+}
+#bannner_part .bannertext .box_search i{
+    margin-left: 20px;
+    font-size: 20px;
+    color: #203239;
+    margin-top: 10px;
+}
+#bannner_part .bannertext .box_search .ss{
+    margin-left: 10px;
+    color: #203239;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+#bannner_part .bannertext .box_search .btn{
+    padding: 9px 40px;
+    background: #000;
+    border-radius: 7px;
+    margin-left: 115px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 2px 1px 38px 1px rgba(0,0,0,0.22); 
+box-shadow: 0px 10px 13px -7px #000000, 2px 1px 38px 1px rgba(0,0,0,0.22);
+}
+#bannner_part .bannertext .box_search .btn a{
+    color: #ffff;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+#bannner_part .counter h3{
+    color: #203239;
+    font-size: 56px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+#bannner_part .counter span{
+    color: #FF7527;
+}
+#bannner_part .counter p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #203239;
+}
+
+/* ==================================================
+            Banner Part End
+======================================================*/
+
+/* ==================================================
+            Property Part start
+======================================================*/
+#prperty{
+    padding: 100px;
+}
+
+#prperty h2{
+    color: #203239;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+#prperty .card {
+    padding: 30px;
+    margin-top: 50px;
+    transition:.3s;
+    border: transparent;
+
+
+}
+#prperty .card:hover{
+    border: 1px solid #ccc;
+}
+#prperty .card p{ 
+    color: #203239;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif; 
+    position: relative;
+}
+#prperty .card p span{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    color: #FF7527;
+}
+#prperty .card .description{
+    color: #203239;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif; 
+    margin: 10px 0;
+    padding-right: 140px;
+}
+
+
+#prperty .card .hover_box .btn{
+    color: #203239;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif; 
+    position: relative;
+    padding: 0;
+    z-index: 2;
+}
+#prperty .card .hover_box .btn i{
+    margin-left: 5px;
+}
+#prperty .card .hover_box .overlay{
+    position: absolute;
+    padding: 21px 4px;
+    background: #FF7527;
+    top: 12px;
+    left: 0;
+}
+#prperty .card .hover_box .btn::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: -4px;
+    width: 37px;
+    height: 22px;
+    background: #8b7878;
+    z-index: -2;
+}
+
+/* ==================================================
+            Property Part End
+======================================================*/
+
+/* ==================================================
+            resident Part start
+======================================================*/
+
+#resident-part{
+    padding: 52px 0 155px 0;
+    background: #EEEDDE;
+}
+#resident-part .title{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF7527;
+    font-family: 'Poppins', sans-serif; 
+}
+
+#resident-part .under-title{
+    font-size: 36px;
+    font-weight: 600;
+    color: #203239;
+    font-family: 'Poppins', sans-serif; 
+    margin-bottom: 56px;
+}
+#resident-part .right-head h2{
+    font-size: 36px;
+    font-weight: 600;
+    color: #203239;
+    font-family: 'Poppins', sans-serif; 
+    margin-bottom: 16px;
+}
+#resident-part .right-head .rd{
+    font-size: 16px;
+    font-weight: 300;
+    color: #203239;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif; 
+}
+#resident-part .end-part a{
+    border: 1px solid #203239;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+    color: #203239;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'popins',sans-serif;
+    transition: all linear .2s;
+}
+#resident-part .end-part a:hover
+{
+    border: 1px solid #203239;
+    background: #203239;
+    color: #fff;
+    
+}
+#resident-part .end-part .btn{
+    border: 1px solid #203239;
+    background: #203239;
+    padding: 10px 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+    color: #ffff;
+    margin-left: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'popins',sans-serif;
+}
+
+#resident-part .end-part a i.fa-phone{
+    margin-right: 10px;
+    color: #203239;
+    transition: all linear .2s;
+}
+#resident-part .end-part a:hover i.fa-phone{
+    color: #fff;
+}
+#resident-part .resident-images{
+    position: relative;
+    
+}
+#resident-part .resident-images .downimge{
+    position: absolute;
+    content: '';
+    top: 60px;
+    left: 167px;
+
+}
+
+/* ==================================================
+            resident Part End
+======================================================*/
+
+/* ==================================================
+            kota Part Start
+======================================================*/
+#kota-part{
+    padding: 68px 0;
+}
+#kota-part .headleft .title{
+    font-size: 16px;
+    font-weight: 500;
+    color: #FF7527;
+    font-family: 'Poppins', sans-serif; 
+}
+#kota-part .headleft .under-title{
+
+    font-size: 36px;
+    font-weight: 600;
+    color: #203239;
+    font-family: 'Poppins', sans-serif; 
+    margin-bottom: 56px;
+}
+
+#kota-part .icon i{
+    padding: 5px 10px;
+    border: 1px solid #D6D5C7;
+    margin-left: 20px;
+    color: #FF7527;
+    border-radius: 4px;
+    margin-top: 27px;
+    cursor: pointer;
+}
+#kota-part .icon i:hover{
+    background:#D6D5C7;
+    opacity: .4;
+    
+}
+#kota-part .cardkota h4{
+    font-size: 24px;
+    font-weight: 500;
+    color: #203239;
+    font-family: 'Poppins', sans-serif; 
+    margin-top: 16px;
+}
+#kota-part .cardkota p{
+    font-size: 15px;
+    font-weight: 200;
+    color: #203239;
+    font-family: 'Poppins', sans-serif; 
+    margin-top: 8px;
+    line-height: 25px;
+}
+
+/* ==================================================
+            Kota Part End
+======================================================*/
+
+/* ==================================================
+            kami Part start
+======================================================*/
+#kami{
+    padding: 45px 0;
+    background: #EEEDDE;
+}
+#kami .headkami{
+    color: #203239;
+    font-size: 36px;
+    font-weight: 500;    
+    font-family: 'Poppins', sans-serif;   
+    margin-bottom: 30px;  
+}
+#kami .call-part {
+    border: 1px solid rgba(255, 118, 39, 0.2);
+    padding:24px 24px 24px 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+#kami .call-part  i{
+    position: absolute;
+    content: '';
+    top: 33px;
+    left: 49px;
+    font-size: 36px;
+    
+}
+#kami .call-part a{
+    font-size: 16px;
+    font-weight: 500;
+    color: #203239;
+    font-family: 'popins',sans-serif;
+    margin-left: 52px;
+}
+#kami .call-part a span{
+
+    margin-left: 50px;
+}
+#kami .call-part .call-btn{
+    margin-top: 20px;
+    width: 205px;
+    height: 51px;
+    text-align: center;
+    background: rgba(255, 118, 39, 0.2);
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #FF7527;
+    font-family: 'popins',sans-serif;
+    line-height: 51px;
+    transition: linear .2s;
+}
+#kami .call-part .call-btn:hover{
+    background: #FF7527;
+    color: #fff;
+    
+}
+#kami .kamiright h2{
+    margin-left: 30%;
+}
+#kami img{
+    margin-left: 100px;
+}
+/* ==================================================
+            kami Part End
+======================================================*/
+
+/* ==================================================
+            footer Part start
+======================================================*/
+#fotter{
+    padding: 10px 0;
+    background: #203239;
+}
+#fotter .footer-icon {
+    justify-content: end;
+}
+#fotter .footer-icon i{
+    color: #fff;
+    line-height: 50px;
+    padding-right: 40px;
+    font-size: 20px;
+}
+#fotter .footer-icon i:last-child{
+    padding: 0;
+}
+
+
+
+/* ==================================================
+            footer Part End
+======================================================*/
